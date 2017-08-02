@@ -1,7 +1,6 @@
 package com.xellir.view;
 
-import com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory;
-import com.xellir.Controller.BoardgameController;
+import com.xellir.Controller.BoardgameMySQLController;
 import com.xellir.model.Boardgame;
 
 import javax.swing.*;
@@ -9,7 +8,6 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
 import java.util.List;
 
 /**
@@ -27,7 +25,7 @@ public class TestMenu extends JFrame
     private JLabel checkField;
     private JTable table1;
 
-    BoardgameController controller=new BoardgameController();
+    BoardgameMySQLController controller=new BoardgameMySQLController();
 
     public TestMenu(final MainMenu m)
     {

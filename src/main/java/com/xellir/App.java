@@ -1,10 +1,7 @@
 package com.xellir;
 
-import com.xellir.Controller.BoardgameController;
+import com.xellir.Controller.BoardgameMySQLController;
 import com.xellir.model.Boardgame;
-import com.xellir.model.Duration;
-import com.xellir.model.Language;
-import com.xellir.view.MainMenu;
 
 import java.util.List;
 
@@ -18,7 +15,7 @@ public class App
     {
         //new MainMenu();
        // System.out.println(Duration.EPIC.message().length());
-        BoardgameController controller=new BoardgameController();
+        BoardgameMySQLController controller=new BoardgameMySQLController();
         List<Boardgame> list = controller.allBoardgames();
         for (Boardgame b:list
              )

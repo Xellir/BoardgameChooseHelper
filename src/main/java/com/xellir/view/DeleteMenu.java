@@ -1,6 +1,7 @@
 package com.xellir.view;
 
 import com.xellir.Controller.BoardgameController;
+import com.xellir.Controller.BoardgameMySQLController;
 import com.xellir.model.Boardgame;
 
 import javax.swing.*;

@@ -1,6 +1,6 @@
 package com.xellir.view;
 
-import com.xellir.Controller.BoardgameController;
+import com.xellir.Controller.BoardgameMySQLController;
 import com.xellir.model.Boardgame;
 
 import javax.swing.*;
@@ -8,7 +8,6 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.*;
 
 /**
  * Created by Somehow on 17.07.2017.
@@ -20,7 +19,7 @@ public class TestTableManu extends JFrame
     private JButton prev;
     private JLabel jl;
     DefaultTableModel tmodel=null;
-    BoardgameController controller=new BoardgameController();
+    BoardgameMySQLController controller=new BoardgameMySQLController();
 
     public TestTableManu() throws HeadlessException
     {

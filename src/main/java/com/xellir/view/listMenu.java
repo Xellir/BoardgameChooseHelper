@@ -1,6 +1,7 @@
 package com.xellir.view;
 
 import com.xellir.Controller.BoardgameController;
+import com.xellir.Controller.BoardgameMySQLController;
 import com.xellir.model.Boardgame;
 
 import javax.swing.*;
@@ -22,7 +23,7 @@ public class listMenu extends Menu
     private JButton search;
     private JButton random;
     DefaultTableModel tmodel=null;
-    BoardgameController controller=new BoardgameController();
+    BoardgameController controller=new BoardgameMySQLController();
 
     public listMenu()
     {
